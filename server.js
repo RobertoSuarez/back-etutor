@@ -5,8 +5,8 @@ import router from "./routes/user-routes.js";
 import cors from "cors";
 
 const app = express();
-const port = process.env.port || 3000;
-const db = process.env.port || "mongodb+srv://electrosonix12:u2QQF50ht8JcR7SV@clusteruniversity.cuollpf.mongodb.net/etutor?retryWrites=true&w=majority";
+const port = process.env.PORT || 3000;
+const db = process.env.DB || "mongodb+srv://electrosonix12:u2QQF50ht8JcR7SV@clusteruniversity.cuollpf.mongodb.net/etutor?retryWrites=true&w=majority";
 
 app.use(cors());
 app.use(express.json());
